@@ -34,6 +34,11 @@ public class LunchTime {
      */
     public LunchTime() {
         // TODO: Initialize all four instance variables.
+        numNugs = 8; 
+        mysterySauce = 9.9;
+        enoughNugs = true;
+        entreeName = "Chicken Nugget Sandwich With No Bread";
+        
     }
 
 
@@ -42,6 +47,10 @@ public class LunchTime {
      */
     public LunchTime(int nugs, double sauce, boolean enough, String name) {
         // TODO: Set all four instance variables using the parameters.
+        numNugs = nugs;
+        mysterySauce = sauce;
+        enoughNugs = enough;
+        entreeName = name;
     }
 
 
@@ -155,7 +164,8 @@ public class LunchTime {
        */
       public int cafeteriaRandomness(int lowNugs, int highNugs) {
           // TODO: return a random integer from lowNugs through highNugs
-          return 0;
+          
+          return (int) Math.random() * (highNugs + 1) + lowNugs;
       }
 
 
@@ -289,7 +299,7 @@ public class LunchTime {
 
         // TODO:
         // Create a LunchTime object using the no-argument constructor.
-
+      LunchTime lunch1 = new LunchTime();
 
         // TODO:
         // Create another LunchTime object using the constructor
@@ -297,13 +307,13 @@ public class LunchTime {
         //
         // Feel free to invent an appropriately terrible cafeteria
         // entree name.
-
+      LunchTime garbage = new LunchTime(1, 100.0, no, "Garbage");
 
         // TODO:
         // Call EVERY non-challenge method at least once.
         //
         // Print the results so you can verify that your methods work.
-
+      System.
 
         // OPTIONAL:
         // Attempt the four challenges if you are feeling powerful.
